@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Header(){
     return(
-        <Link href='' className="mt-2 flex items-center">
+        <Link href='' className="flex justify-center border-2">
             <Image
-            src='/Ufitini-logo.png'
+            src='/Ufitini-logo2.png'
             alt='logo'
-            width={300}
-            height={500}
+            width={200}
+            height={250}
             />
         </Link>
     )

@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function AiTrainer(){
     return(
-        <div className="flex flex-col items-start justify-start bg-aqua rounded-xl shadow-xl mt-5 ml-slide ">
-            <div className="flex flex-row items-center justify-center h-30 w-88 bg-lightblue ml-7.5 mr-7.5 mb-112 rounded-xl">
+        <div className="flex flex-col items-center justify-center bg-aqua rounded-xl shadow-xl mt-5 ml-3 mr-3">
+            <div className="flex flex-row items-center justify-center h-30 w-88 bg-lightblue mb-112 rounded-xl">
                 <Image
                 src='/AI-Assistant.png'
                 alt="AI Assistant"
@@ -11,7 +11,7 @@ export default function AiTrainer(){
                 width={90} 
                 height={90}
                 />
-                <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-black">Your AI Personal Trainer</h2>
+                <h2 className="text-xl sm:text-4xl md:text-5xl text-black">Your AI Personal Trainer</h2>
             </div>
         </div>
     )

@@ -15,7 +15,6 @@ export default function todaysRecipe() {
                     />
                 </div>
             </div>
-
         </div>
     )
 }

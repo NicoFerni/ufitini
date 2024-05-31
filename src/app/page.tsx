@@ -1,13 +1,13 @@
-import Carousel from "./carousel/carousel";
 import { EmblaOptionsType } from 'embla-carousel'
 import "./globals.css"
 import './css/embla.css'
 import './css/base.css'
 import TabBar from "./tabs";
-import AiTrainer from "./aiTrainer/aiTrainer"
-import DailyVideo from "./dailyVideo/dailyVideo";
-import CarouselCategories from "./carousel/carouselCatergories";
+import AiTrainer from "./components/aiTrainer/aiTrainer"
+import DailyVideo from "./components/dailyVideo/dailyVideo";
+import CarouselCategories from "./components/carousel/carouselCatergories";
 import Header from "./header";
+import Carousel from './components/carousel/carousel';
 
 const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 4

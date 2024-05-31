@@ -11,12 +11,11 @@ type PropType = {
 
 const CarouselCategories: React.FC<PropType> = (props) => {
     const { slides, options } = props
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()])
-
+    const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, loop: true }, [ClassNames()])
 
     return (
         <div className="embla">
-            <h1 className="flex justify-center items-center font-mono mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl">
+            <h1 className="flex justify-start items-center mb-2 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl">
                 Categories
             </h1>
             <div className="embla__viewport ml-3" ref={emblaRef}>

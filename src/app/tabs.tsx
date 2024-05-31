@@ -6,7 +6,7 @@ export default function TabBar() {
     <div className="flex justify-around items-center bg-gray-200 p-4 fixed bottom-0 w-full">
       <Link legacyBehavior href="/">
         <a className="text-center">
-          <FaHome className="mx-auto"/>
+          <FaHome className="mx-auto" />
           <p>Home</p>
         </a>
       </Link>
