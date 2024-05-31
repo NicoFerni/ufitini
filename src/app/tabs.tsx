@@ -1,50 +1,33 @@
-'use client'
-
-import React from "react";
-import { Tabs, Tab } from "@nextui-org/react";
-import { useRouter } from 'next/navigation';
-
+import { FaHome, FaUser, FaDumbbell, FaAppleAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function TabBar() {
-
-    const router = useRouter();
-
-    let tabs = [
-        {
-            id: "Home",
-            label: "Home",
-            link: ""
-        },
-        {
-            id: "Fitness",
-            label: "Fitness",
-            link: "/fitness"
-        },
-        {
-            id: "Recipes",
-            label: "Recipes",
-            link: "/recipes"
-        },
-        {
-            id: "Profile",
-            label: "Profile",
-            link: "/profile"
-        }
-    ];
-
-    return (
-        <div className="fixed bottom-0 w-full">
-            <Tabs aria-label="Dynamic tabs" items={tabs} className="flex w-full flex-col  inset-x-0 bottom-0">
-            {(item) => (
-                    <Tab 
-                        key={item.id} 
-                        title={item.label} 
-                        onClick={() => router.push(item.link)}
-                    >
-                     
-                    </Tab>
-                )}
-            </Tabs>
-        </div>
-    );
+  return (
+    <div className="flex justify-around items-center bg-gray-200 p-4 fixed bottom-0 w-full">
+      <Link legacyBehavior href="/">
+        <a className="text-center">
+          <FaHome className="mx-auto"/>
+          <p>Home</p>
+        </a>
+      </Link>
+      <Link legacyBehavior href="/fitness">
+        <a className="text-center">
+          <FaDumbbell className="mx-auto"/>
+          <p>Fitness</p>
+        </a>
+      </Link>
+      <Link legacyBehavior href="/recipes">
+        <a className="text-center">
+          <FaAppleAlt className="mx-auto"/>
+          <p>Recipes</p>
+        </a>
+      </Link>
+      <Link legacyBehavior href="/profile">
+        <a className="text-center">
+          <FaUser className="mx-auto"/>
+          <p>Profile</p>
+        </a>
+      </Link >
+    </div>
+  );
 }

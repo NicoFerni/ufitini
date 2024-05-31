@@ -15,6 +15,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "aqua" : "#0f808f"
+      },
+      spacing: {
+        'slide': 'var(--slide-spacing)',
+        'height' : '[var(--slide-height)]',
+        'width' : '[var(--slide-size)]'
+      }
     },
   },
   plugins: [],

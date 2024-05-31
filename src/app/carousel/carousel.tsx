@@ -31,10 +31,10 @@ const Carousel: React.FC<PropType> = (props) => {
 
   return (
     <div className="embla">
-      <h1 className="flex justify-center items-center font-mono mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+      <h1 className="flex justify-center items-center font-mono mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl">
         Today's workout
         </h1>
-      <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__viewport ml-3" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide embla__class-names" key={index}>
@@ -48,7 +48,7 @@ const Carousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls">
+      {/* <div className="embla__controls">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
@@ -65,7 +65,7 @@ const Carousel: React.FC<PropType> = (props) => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
