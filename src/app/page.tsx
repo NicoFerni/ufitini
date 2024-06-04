@@ -1,7 +1,6 @@
 import { EmblaOptionsType } from 'embla-carousel'
 import "./globals.css"
 import './css/embla.css'
-import './css/base.css'
 import TabBar from "./tabs";
 import AiTrainer from "./components/aiTrainer/aiTrainer"
 import DailyVideo from "./components/dailyVideo/dailyVideo";

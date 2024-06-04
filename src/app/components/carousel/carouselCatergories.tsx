@@ -9,6 +9,8 @@ type PropType = {
     options?: EmblaOptionsType
 }
 
+const slideTexts = ['Yoga', 'Meals', 'Fitness', 'Motivational']
+
 const CarouselCategories: React.FC<PropType> = (props) => {
     const { slides, options } = props
     const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, loop: true }, [ClassNames()])
@@ -21,13 +23,16 @@ const CarouselCategories: React.FC<PropType> = (props) => {
             <div className="embla__viewport ml-3" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((index) => (
-                        <div className="embla__slide embla__class-names" key={index}>
-                            <img
-                                className="embla__slide__img"
-                                src={`/categories-${index}.jpg`}
-                                alt="Images"
-                            />
-                        </div>
+              <div className="embla__slide embla__class-names relative" key={index}>
+              <img
+                className="embla__slide__img"
+                src={`/categories-${index}.jpg`}
+                alt="Images"
+              />
+            <p className="absolute bottom-2 right-2 text-2xl text-bold shadow-2xl text-black m-2">
+              {slideTexts[index]}
+            </p>
+            </div>
                     ))}
                 </div>
             </div>
