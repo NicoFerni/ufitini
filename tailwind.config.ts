@@ -20,8 +20,8 @@ const config: Config = {
       },
       spacing: {
         'slide': 'var(--slide-spacing)',
-        'height' : '[var(--slide-height)]',
-        'width' : '[var(--slide-size)]'
+        'height' : 'var(--slide-height)',
+        'width' : 'var(--slide-size)'
       }
     },
   },

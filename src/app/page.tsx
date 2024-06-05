@@ -7,6 +7,7 @@ import DailyVideo from "./components/dailyVideo/dailyVideo";
 import CarouselCategories from "./components/carousel/carouselCatergories";
 import Header from "./header";
 import Carousel from './components/carousel/carousel';
+import TodaysRecipe from './components/todaysRecipe/todaysRecipe';
 
 const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 4
@@ -23,6 +24,7 @@ export default function Home() {
       <AiTrainer />
       <DailyVideo />
       <CarouselCategories slides={SLIDES2} options={OPTIONS} />
+      <TodaysRecipe/>
       <TabBar />
     </div>
   );

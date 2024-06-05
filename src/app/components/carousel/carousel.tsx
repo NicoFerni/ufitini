@@ -19,14 +19,15 @@ const Carousel: React.FC<PropType> = (props) => {
       <h2 className="flex justify-start font-bold items-center ml-2 mb-2 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl">
         Today's workout
       </h2>
-      <div className="embla__viewport ml-3" ref={emblaRef}>
-        <div className="embla__container">
+      <div className="overflow-hidden	 ml-3" ref={emblaRef}>
+        <div className="backface-hidden flex ml-slide* -1">
           {slides.map((index) => (
             <div className="embla__slide embla__class-names relative" key={index}>
               <img
-                className="embla__slide__img"
+                className="rounded-lg block object-cover"
                 src={`/carousel-${index}.jpg`}
                 alt="Images"
+                style={{ height: 250, width: '100%' }}
               />
             <p className="absolute bottom-2 right-2 text-2xl text-bold shadow-2xl text-black m-2">
               {slideTexts[index]}
