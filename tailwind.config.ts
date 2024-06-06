@@ -22,6 +22,9 @@ const config: Config = {
         'slide': 'var(--slide-spacing)',
         'height' : 'var(--slide-height)',
         'width' : 'var(--slide-size)'
+      },
+      flex: {
+        '0': '0 0 var(--slide-size)'
       }
     },
   },
