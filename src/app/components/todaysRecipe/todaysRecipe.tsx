@@ -11,7 +11,7 @@ export default function TodaysRecipe() {
                     src='/Recipe.jpg'
                     alt="Today's recipe"
                     className='rounded-xl object-cover'
-                    layout="fill"
+                    fill
                 />
             </div>
         </div>
