@@ -20,7 +20,6 @@ export default function Home() {
       <Carousel slides={SLIDES} options={OPTIONS} />
       <DailyVideo />
       <CarouselCategories slides={SLIDES} options={OPTIONS} />
-      <TodaysRecipe/>
       <TabBar />
     </div>
   );
