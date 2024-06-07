@@ -13,7 +13,7 @@ export default function TodaysRecipe() {
                     className='rounded-xl object-cover'
                     fill
                 />
-            </div>
+            </div> 
         </div>
     )
 }
