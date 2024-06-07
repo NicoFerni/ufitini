@@ -4,13 +4,13 @@ import Image from "next/image";
 const cards = [
     {
         title: 'Your AI Personal Trainer',
-        imageSrc: '/AI-Assistant.png',
+        imageSrc: '/ai-assistant.png',
         altText: 'AI Personal Trainer',
         icon: '/ai-assistant-icon.png'
     },
     {
         title: 'Power Up! Daily Video',
-        imageSrc: '/Motivational-video.jpg',
+        imageSrc: '/motivational-video.jpg',
         altText: 'Daily Video',
         icon: '/power-icon.png'
     },

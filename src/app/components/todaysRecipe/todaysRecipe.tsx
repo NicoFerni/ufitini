@@ -8,7 +8,7 @@ export default function TodaysRecipe() {
             </div>
             <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-128 lg:h-128">
                 <Image
-                    src='/Recipe.jpg'
+                    src='/recipe.jpg'
                     alt="Today's recipe"
                     className='rounded-xl object-cover'
                     fill

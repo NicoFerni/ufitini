@@ -5,7 +5,7 @@ export default function Header(){
     return(
         <Link href='' className="flex justify-start ">
             <Image
-            src='/Ufitini-logo.png'
+            src='/ufitini-logo.png'
             alt='logo'
             className='ml-4 mt-3'
             width={150}
